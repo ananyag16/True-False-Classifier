@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/coordinatestyle.css">
+</head>
+<body>
+    <header class = "topBar">
+        <h1><span id = "mainHead"><img src = "images/other/logo.png" width = "70px">AutoGrade</span><br>Instructor's Companion</h1>
+    </header>
+    <div id="bar">
+         <span id = "pageHead">SELECT REGIONS TO BE GRADED</span>
+    </div>
+    <div class = "boxSelect">
+        <div class = "box"></div>
+        <img src ="images/Himanshu Sood.jpeg" width = "75%" id="target">
+        <form method = "POST" action = "/select" class = "form">
+            <h3 class = "topLeftHead">Top Left Coordinates</h3>
+            <div>
+                <label for = "topLeftX">X :</label>
+                <input type = "number" id = "topLeftX" name = "topLeftX">
+            </div>
+            <div>
+                <label for = "topLeftY">Y :</label>
+                <input type = "number" id = "topLeftY" name = "topLeftY">
+            </div>
+            <h3>Bottom Right Coordinates</h3>
+            <div>
+                <label for = "botRightX">X :</label>
+                <input type = "number" id = "botRightX" name = "botRightX">
+            </div>
+            <div>
+                <label for = "botRightY">Y :</label>
+                <input type = "number" id = "botRightY" name = "botRightY">
+            </div>
+            <h3>Truth Value</h3>
+            <div>
+                <label for = "truthValue">T/F :</label>
+                <input type = "text" id = "truthValue" name = "truthValue" required>
+            </div>
+            <button type = "submit" class = "btn">Submit</button>
+            <input type = "hidden" id = "dimensions" name = "dimensions">
+        </form>
+        <form class = "gen" action = "/resultgen" method = "GET">
+            <button class = "btn" type = "submit">Done Selecting</button>
+        </form>
+    </div>
+    <script src = "javascript/coordinatescript.js"></script>
+</body>
+</html>
