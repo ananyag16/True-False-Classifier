@@ -1,0 +1,92 @@
+:root {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin : 0px;
+    background : #feffff;
+}
+
+#bar {
+    padding:5px;
+    background : #DEF2F1;
+    text-align: center;
+}
+
+.topBar {
+    background-color:#3AAFA9;
+}
+
+h1 {
+    margin : 0px;
+    color : #17252A;
+    text-align : center;
+    font-weight:normal;
+    line-height : 1.1;
+    padding : 20px 0;
+}
+
+#mainHead {
+    color: #ffffff;
+    font-size:200%;
+    display:inline-block;
+    margin: auto;
+    font-weight:bolder;
+    text-transform:uppercase;
+}
+
+.boxSelect {
+    position: relative;
+    display: flex;
+    /*Box margins and paddings set in script.js file */
+}
+
+.box {
+    position: absolute;
+    z-index: 1;
+    border-width: 2px;
+    border-style: dashed;
+}
+
+.form {
+    margin-top:50px;
+    background-color:rgb(245, 248, 248);
+    padding:15px;
+    height:30%;
+    margin-left:20px;
+}
+
+.form div {
+    margin-bottom:10px;
+}
+
+.form button {
+    margin-top:10px;
+}
+
+.topLeftHead {
+    margin-top:0px;
+}
+
+.btn {
+    font-family:'Montserrat';
+    border-style:none;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 40px;
+    background: #17252A;
+    border-radius: 7px;
+    transition: background .2s;
+}
+
+.btn:hover {
+    color: #fff;
+    background: #2B7A78;
+}
+
+.options {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    text-align: center;
+}

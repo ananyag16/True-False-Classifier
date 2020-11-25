@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Upload Images</title>
+    <link rel="stylesheet" href="css/submissionstyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form id = "upload" method = "GET" action = "/select">
+        <h2>Upload Images to AutoGrade</h2>
+        <div class = "numwrapper">
+            <label for ="numQ">Number of questions per file :</label>
+            <input type = "number" id = "numQ" name = "numQ">
+        </div>
+        <div class = "uploadWrapper">
+            <label for = "images" class ="btn main">Upload Images</label>
+            <input type = "file" id = "images" name = "images" multiple class = "uploadInput">
+        </div>
+        <div class = "buttons">
+        <input type = "submit" class = "btn submit"  value = "SUBMIT">
+        <button type = "reset" class = "btn reset">Reset</button>
+        </div>
+    </form>
+</body>
+</html>
